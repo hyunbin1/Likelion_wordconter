@@ -6,6 +6,15 @@
     <title>Word Counter Project</title>
 </head>
 <body>
-    Djago가 돌아간다 이야앙아
+    <h1>문장을 입력하고 "결과 확인하기" 버튼을 클릭하세요!</h1>
+    <br>
+    <form action="{% url 'result' %}">
+        <textarea name="fulltext" id="" cols="40" rows="10"></textarea>
+        <br> 
+        <input type="submit" value="결과 확인하기">
+        <br>
+        <a href="{% url 'about' %}">프로젝트 소개</a>
+        <br>
+    </form>
 </body>
 </html>
